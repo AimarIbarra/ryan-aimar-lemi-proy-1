@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Bird wybern species">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- our own css -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Bird wybern</title>
+</head>
+
+<body>
+    <!-- generic header, it will be the same in all pages, except the active class -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+            <div class="container">
+                <!-- We do not own the logo -->
+                <a class="navbar-brand" href="https://monsterhunternow.com/" target="_blank">
+                    <img src="/images/monster_hunter_now_logo.png" alt="..." height="60">
+                </a>
+
+                <!-- This will be displayed on smaller viewports e.g.: movile phone -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- This will be displayed on bigger viewports e.g.: desktop monitor -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/information/about_us.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/information/disclaimer.html">Disclaimer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/information/survey.html">Survey</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Monsters
+                            </a>
+                            <!--
+                                    The monsters are classified in 5 different species, but the dropdown only allows
+                                    individual access by id
+                                -->
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/species/fanged_wyvern.html#GREAT_JAGRAS">Great
+                                        Jagras</a></li>
+                                <li><a class="dropdown-item" href="/species/fanged_wyvern.html#GREAT_GIRROS">Great
+                                        Girros</a></li>
+                                <li><a class="dropdown-item"
+                                        href="/species/fanged_wyvern.html#TOBI-KADACHI">Tobi-Kadachi</a></li>
+                                <li><a class="dropdown-item" href="/species/bird_wyvern.html#KULU-YA-KU">Kulu-Ya-Ku</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="/species/bird_wyvern.html#PUKEI-PUKEI">Pukei-Pukei</a></li>
+                                <li><a class="dropdown-item" href="/species/brute_wyvern.html#BARROTH">Barroth</a></li>
+                                <li><a class="dropdown-item" href="/species/brute_wyvern.html#ANJANATH">Anjanath</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/species/flying_wyvern.html#PAOLUMU">Paolumu</a></li>
+                                <li><a class="dropdown-item" href="/species/flying_wyvern.html#RATHIAN">Rathian</a></li>
+                                <li><a class="dropdown-item" href="/species/flying_wyvern.html#LEGIANA">Legiana</a></li>
+                                <li><a class="dropdown-item" href="/species/flying_wyvern.html#RATHALOS">Rathalos</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/species/flying_wyvern.html#DIABLOS">Diablos</a></li>
+                                <li><a class="dropdown-item"
+                                        href="/species/piscine_wyvern.html#JYURATODUS">Jyuratodus</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Bird Wyverns</h1>
+            <div class="d-flex flex-row">
+                <div class="row row-cols-2">
+                    <article class="card col" id="KULU-YA-KU">
+                        <img src="/images/monsters/Kulu-Ya-Ku.webp" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title">Kulu-Ya-Ku</h2>
+                            <h3 class="card-subtitle mb-2 text-body-secondary">Scratching Bird</h3>
+                            <h3 class="card-subtitle mb-2 text-body-secondary">Ovivore Outlaw</h3>
+                            <p class="card-text">
+                                The Kulu-Ya-Ku is a medium-sized Bird Wyvern characterized by its prominent beak,
+                                adorned with vibrant earth-toned feathers. Its body is streamlined, with sharp talons on
+                                its feet and a short, sturdy tail that aids in balance. Known for its peculiar behavior
+                                of wielding rocks as weapons and shields, the Kulu-Ya-Ku's distinct crest on its head
+                                can be raised or lowered to reflect its mood, making it a visually striking and unique
+                                creature.
+                            </p>
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th colspan="4">Hitzone Damage Data
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>Hitzone
+                                            </th>
+                                            <th>Cutting Damage
+                                            </th>
+                                            <th>Impact Damage
+                                            </th>
+                                            <th>Shot Damage
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><b>Head</b>
+                                            </td>
+                                            <td>68
+                                            </td>
+                                            <td>68
+                                            </td>
+                                            <td>60
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Torso</b>
+                                            </td>
+                                            <td>45
+                                            </td>
+                                            <td>45
+                                            </td>
+                                            <td>40
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Foreleg</b>
+                                            </td>
+                                            <td>52
+                                            </td>
+                                            <td>56
+                                            </td>
+                                            <td>45
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Tail</b>
+                                            </td>
+                                            <td>55
+                                            </td>
+                                            <td>50
+                                            </td>
+                                            <td>35
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2">Breakable Parts:
+                                            </th>
+                                            <td colspan="2">Head, Forelegs
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card col" id="PUKEI-PUKEI">
+                        <img src="/images/monsters/Pukei-Pukei.webp" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title">Pukei-Pukei</h2>
+                            <h3 class="card-subtitle mb-2 text-body-secondary">Poison Bewitching Bird</h3>
+                            <h3 class="card-subtitle mb-2 text-body-secondary">Gluttonous Gullet</h3>
+                            <p class="card-text">
+                                The Pukei-Pukei is known for its colorful appearance and poisonous attacks. Its physical
+                                features include a vibrant and flamboyant color scheme, with a prominent, elongated beak
+                                reminiscent of a chameleon's. Its body is covered in smooth, iridescent scales, with
+                                notable wing membranes featuring striking patterns. The Pukei-Pukei's tail ends in a
+                                pronounced, venomous tip that it uses for both defense and offense, while its large,
+                                expressive eyes allow for keen observation of its surroundings. With a distinct frill
+                                around its neck and a generally sleek and agile build.
+                            </p>
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th colspan="4">Hitzone Damage Data
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>Hitzone
+                                            </th>
+                                            <th>Cutting Damage
+                                            </th>
+                                            <th>Impact Damage
+                                            </th>
+                                            <th>Shot Damage
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><b>Head</b>
+                                            </td>
+                                            <td>75
+                                            </td>
+                                            <td>80
+                                            </td>
+                                            <td>70
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Tongue</b>
+                                            </td>
+                                            <td>95
+                                            </td>
+                                            <td>90
+                                            </td>
+                                            <td>85
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Neck</b>
+                                            </td>
+                                            <td>40
+                                            </td>
+                                            <td>35
+                                            </td>
+                                            <td>30
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Torso</b>
+                                            </td>
+                                            <td>35
+                                            </td>
+                                            <td>35
+                                            </td>
+                                            <td>30
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Wing</b>
+                                            </td>
+                                            <td>50
+                                            </td>
+                                            <td>45
+                                            </td>
+                                            <td>40
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Leg</b>
+                                            </td>
+                                            <td>45
+                                            </td>
+                                            <td>45
+                                            </td>
+                                            <td>40
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Tail</b>
+                                            </td>
+                                            <td>55
+                                            </td>
+                                            <td>50
+                                            </td>
+                                            <td>45
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2">Breakable Parts:
+                                            </th>
+                                            <td colspan="2">Head, Wings, Back, Tail (Sever)
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Aimar y Ryan</p>
+        </div>
+    </footer>
+</body>
+
+</html>

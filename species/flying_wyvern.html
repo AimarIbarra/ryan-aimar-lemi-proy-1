@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Flying wyvern species">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- our own css -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Flying wyvern</title>
+</head>
+
+<body>
+    <!-- generic header, it will be the same in all pages, except the active class -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+            <div class="container">
+                <!-- We do not own the logo -->
+                <a class="navbar-brand" href="https://monsterhunternow.com/" target="_blank">
+                    <img src="/images/monster_hunter_now_logo.png" alt="..." height="60">
+                </a>
+
+                <!-- This will be displayed on smaller viewports e.g.: movile phone -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- This will be displayed on bigger viewports e.g.: desktop monitor -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/information/about_us.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/information/disclaimer.html">Disclaimer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/information/survey.html">Survey</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Monsters
+                            </a>
+                            <!--
+                                    The monsters are classified in 5 different species, but the dropdown only allows
+                                    individual access by id
+                                -->
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/species/fanged_wyvern.html#GREAT_JAGRAS">Great
+                                        Jagras</a></li>
+                                <li><a class="dropdown-item" href="/species/fanged_wyvern.html#GREAT_GIRROS">Great
+                                        Girros</a></li>
+                                <li><a class="dropdown-item"
+                                        href="/species/fanged_wyvern.html#TOBI-KADACHI">Tobi-Kadachi</a></li>
+                                <li><a class="dropdown-item" href="/species/bird_wyvern.html#KULU-YA-KU">Kulu-Ya-Ku</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="/species/bird_wyvern.html#PUKEI-PUKEI">Pukei-Pukei</a></li>
+                                <li><a class="dropdown-item" href="/species/brute_wyvern.html#BARROTH">Barroth</a></li>
+                                <li><a class="dropdown-item" href="/species/brute_wyvern.html#ANJANATH">Anjanath</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/species/flying_wyvern.html#PAOLUMU">Paolumu</a></li>
+                                <li><a class="dropdown-item" href="/species/flying_wyvern.html#RATHIAN">Rathian</a></li>
+                                <li><a class="dropdown-item" href="/species/flying_wyvern.html#LEGIANA">Legiana</a></li>
+                                <li><a class="dropdown-item" href="/species/flying_wyvern.html#RATHALOS">Rathalos</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/species/flying_wyvern.html#DIABLOS">Diablos</a></li>
+                                <li><a class="dropdown-item"
+                                        href="/species/piscine_wyvern.html#JYURATODUS">Jyuratodus</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Flying Wyverns</h1>
+            <div class="d-flex flex-row">
+                <div class="row row-cols-2">
+                    <article class="card col" id="PAOLUMU">
+                        <img src="/images/monsters/Paolumu.webp" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title">Paolumu</h2>
+                            <h3 class="card-subtitle mb-2 text-body-secondary">Floating Sky Wyvern</h3>
+                            <p class="card-text">
+                                The Paolumu is a unique and visually captivating monster recognized for its bat-like
+                                appearance and inflatable membranous sacs. Its furry body is reminiscent of a bat, with
+                                large, expressive eyes and a distinctive set of ears. The most striking feature is its
+                                ability to inflate its sacs, granting it increased buoyancy and the ability to glide
+                                effortlessly through the air. This, coupled with its sharp claws and powerful limbs,
+                                allows the Paolumu to move swiftly and skillfully both in the air and on the ground..
+                            </p>
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th colspan="4">Hitzone Damage Data
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>Hitzone
+                                            </th>
+                                            <th>Cutting Damage
+                                            </th>
+                                            <th>Impact Damage
+                                            </th>
+                                            <th>Shot Damage
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><b>Head</b>
+                                            </td>
+                                            <td>55
+                                            </td>
+                                            <td>55
+                                            </td>
+                                            <td>45
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Neck</b>
+                                            </td>
+                                            <td>40
+                                            </td>
+                                            <td>40
+                                            </td>
+                                            <td>30
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Neck Pouch</b>
+                                            </td>
+                                            <td>75
+                                            </td>
+                                            <td>75
+                                            </td>
+                                            <td>60
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Body</b>
+                                            </td>
+                                            <td>46
+                                            </td>
+                                            <td>46
+                                            </td>
+                                            <td>42
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Legs</b>
+                                            </td>
+                                            <td>40
+                                            </td>
+                                            <td>35
+                                            </td>
+                                            <td>25
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Wings</b>
+                                            </td>
+                                            <td>35
+                                            </td>
+                                            <td>35
+                                            </td>
+                                            <td>45
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Tail</b>
+                                            </td>
+                                            <td>25
+                                            </td>
+                                            <td>25
+                                            </td>
+                                            <td>15
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2">Breakable Parts:
+                                            </th>
+                                            <td colspan="2">Neck pouch, Wings, Torso, Tail (sever)
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card col" id="RATHIAN">
+                        <img src="/images/monsters/Rathian.webp" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title">Rathian</h2>
+                            <h3 class="card-subtitle mb-2 text-body-secondary">Female Fire Wyvern</h3>
+                            <h3 class="card-subtitle mb-2 text-body-secondary">Queen of the Land</h3>
+                            <p class="card-text">
+                                The Rathian, a formidable wyvern, boasts vibrant green scales, a sleek, aerodynamic
+                                physique, and powerful wings that enable swift and agile flight. Its fiery breath is a
+                                potent defense mechanism, and the creature's venomous tail, often a primary focus in
+                                battle, adds an additional layer of danger. With its commanding presence and deadly
+                                capabilities, the Rathian commands respect in its natural habitat.
+                            </p>
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th colspan="4">Hitzone Damage Data
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>Hitzone
+                                            </th>
+                                            <th>Cutting Damage
+                                            </th>
+                                            <th>Impact Damage
+                                            </th>
+                                            <th>Shot Damage
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><b>Head</b>
+                                            </td>
+                                            <td>70
+                                            </td>
+                                            <td>75
+                                            </td>
+                                            <td>65
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Neck</b>
+                                            </td>
+                                            <td>40
+                                            </td>
+                                            <td>45
+                                            </td>
+                                            <td>35
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Body</b>
+                                            </td>
+                                            <td>35
+                                            </td>
+                                            <td>30
+                                            </td>
+                                            <td>25
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Back</b>
+                                            </td>
+                                            <td>35
+                                            </td>
+                                            <td>30
+                                            </td>
+                                            <td>25
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Wing</b>
+                                            </td>
+                                            <td>45
+                                            </td>
+                                            <td>45
+                                            </td>
+                                            <td>35
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Leg</b>
+                                            </td>
+                                            <td>40
+                                            </td>
+                                            <td>40
+                                            </td>
+                                            <td>35
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Tail</b>
+                                            </td>
+                                            <td>45
+                                            </td>
+                                            <td>40
+                                            </td>
+                                            <td>35
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2">Breakable Parts:
+                                            </th>
+                                            <td colspan="2">Head, Wings (Individually), Back, Tail (sever)
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card col" id="LEGIANA">
+                        <img src="/images/monsters/Legiana.webp" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title">Legiana</h2>
+                            <h3 class="card-subtitle mb-2 text-body-secondary">Wind Drifting Wyvern</h3>
+                            <p class="card-text">
+                                Legiana is a magnificent and graceful wyvern with a predominantly icy-blue coloration.
+                                Its body is streamlined and aerodynamic, with long, slender limbs and wings. The
+                                creature has a sleek and regal presence, with a series of prominent frills and feathers
+                                that adorn its head and back, adding to its regal appearance. Legiana's wings are
+                                expansive and covered in intricate patterns, resembling frosty, crystalline formations.
+                                Its icy-blue scales glisten in the light, giving it an ethereal and icy aura. The
+                                monster's sharp, piercing eyes and elongated beak complete its striking and majestic
+                                appearance.
+                            </p>
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th colspan="4">Hitzone Damage Data
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>Hitzone
+                                            </th>
+                                            <th>Cutting Damage
+                                            </th>
+                                            <th>Impact Damage
+                                            </th>
+                                            <th>Shot Damage
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><b>Head</b>
+                                            </td>
+                                            <td>65
+                                            </td>
+                                            <td>70
+                                            </td>
+                                            <td>60
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Neck</b>
+                                            </td>
+                                            <td>35
+                                            </td>
+                                            <td>40
+                                            </td>
+                                            <td>30
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Body</b>
+                                            </td>
+                                            <td>25
+                                            </td>
+                                            <td>25
+                                            </td>
+                                            <td>20
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Back</b>
+                                            </td>
+                                            <td>25
+                                            </td>
+                                            <td>25
+                                            </td>
+                                            <td>20
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Wings</b>
+                                            </td>
+                                            <td>50
+                                            </td>
+                                            <td>45
+                                            </td>
+                                            <td>40
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Legs</b>
+                                            </td>
+                                            <td>35
+                                            </td>
+                                            <td>35
+                                            </td>
+                                            <td>30
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Tail</b>
+                                            </td>
+                                            <td>45
+                                            </td>
+                                            <td>40
+                                            </td>
+                                            <td>35
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2">Breakable Parts:
+                                            </th>
+                                            <td colspan="2">Head, Wings (each), Tail
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card col" id="RATHALOS">
+                        <img src="/images/monsters/Rathalos.webp" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title">Rathalos</h2>
+                            <h3 class="card-subtitle mb-2 text-body-secondary">Fire Wyvern</h3>
+                            <h3 class="card-subtitle mb-2 text-body-secondary">King of the Skies</h3>
+                            <p class="card-text">
+                                Rathalos is an iconic monster in the Monster Hunter series, known for its powerful and
+                                commanding presence. It is characterized by fiery red scales covering its body. Rathalos
+                                has a robust, muscular build, equipped with large wings that allow it to soar through
+                                the skies. Its head features striking features and a fierce, piercing gaze, with no
+                                horns. The monster's forelimbs are armed with powerful claws for grappling and
+                                attacking, and its talons can inflict devastating damage.
+                            </p>
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th colspan="4">Hitzone Damage Data
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>Hitzone
+                                            </th>
+                                            <th>Cutting Damage
+                                            </th>
+                                            <th>Impact Damage
+                                            </th>
+                                            <th>Shot Damage
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><b>Head</b>
+                                            </td>
+                                            <td>75
+                                            </td>
+                                            <td>70
+                                            </td>
+                                            <td>60
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Neck</b>
+                                            </td>
+                                            <td>44
+                                            </td>
+                                            <td>40
+                                            </td>
+                                            <td>20
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Back</b>
+                                            </td>
+                                            <td>25
+                                            </td>
+                                            <td>30
+                                            </td>
+                                            <td>20
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Stomach</b>
+                                            </td>
+                                            <td>44
+                                            </td>
+                                            <td>40
+                                            </td>
+                                            <td>15
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Wings</b>
+                                            </td>
+                                            <td>25
+                                            </td>
+                                            <td>20
+                                            </td>
+                                            <td>25
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Legs</b>
+                                            </td>
+                                            <td>30
+                                            </td>
+                                            <td>25
+                                            </td>
+                                            <td>45
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Tail</b>
+                                            </td>
+                                            <td>30
+                                            </td>
+                                            <td>30
+                                            </td>
+                                            <td>25
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2">Breakable Parts:
+                                            </th>
+                                            <td colspan="2">Head, Wings (each), Back, Tail
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card col" id="DIABLOS">
+                        <img src="/images/monsters/Diablos.webp" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title">Diablos</h2>
+                            <h3 class="card-subtitle mb-2 text-body-secondary">Horned Wyvern</h3>
+                            <h3 class="card-subtitle mb-2 text-body-secondary">Tyrant of the Desert</h3>
+                            <p class="card-text">
+                                Diablos is a massive and menacing monster, known for its burly build, black armored
+                                scales, and imposing, curved horns that serve both as digging tools and formidable
+                                weapons in combat. Its aggressive gaze and sharp teeth, combined with powerful forelimbs
+                                and a bone club at the end of its tail, make Diablos an intimidating presence in the
+                                world of Monster Hunter.
+                            </p>
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th colspan="4">Hitzone Damage Data
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>Hitzone
+                                            </th>
+                                            <th>Cutting Damage
+                                            </th>
+                                            <th>Impact Damage
+                                            </th>
+                                            <th>Shot Damage
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><b>Horn</b>
+                                            </td>
+                                            <td>21
+                                            </td>
+                                            <td>42
+                                            </td>
+                                            <td>20
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Head</b>
+                                            </td>
+                                            <td>45
+                                            </td>
+                                            <td>60
+                                            </td>
+                                            <td>40
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Neck</b>
+                                            </td>
+                                            <td>40
+                                            </td>
+                                            <td>40
+                                            </td>
+                                            <td>25
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Abdomen</b>
+                                            </td>
+                                            <td>65
+                                            </td>
+                                            <td>70
+                                            </td>
+                                            <td>40
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Back</b>
+                                            </td>
+                                            <td>25
+                                            </td>
+                                            <td>42
+                                            </td>
+                                            <td>35
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Wing</b>
+                                            </td>
+                                            <td>40
+                                            </td>
+                                            <td>30
+                                            </td>
+                                            <td>60
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Leg</b>
+                                            </td>
+                                            <td>35
+                                            </td>
+                                            <td>35
+                                            </td>
+                                            <td>35
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>Tail</b>
+                                            </td>
+                                            <td>50
+                                            </td>
+                                            <td>24
+                                            </td>
+                                            <td>45
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><b>LTail tip</b>
+                                            </td>
+                                            <td>23
+                                            </td>
+                                            <td>26
+                                            </td>
+                                            <td>10
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2">Breakable Parts:
+                                            </th>
+                                            <td colspan="2">Horns (each), Tail (sever), Wings (each), Abdomen
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Aimar y Ryan</p>
+        </div>
+    </footer>
+</body>
+
+</html>
